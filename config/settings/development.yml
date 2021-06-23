@@ -1,0 +1,2 @@
+rakuten:
+  id: <%= Rails.application.credentials.dig(:rakuten, :id) %>

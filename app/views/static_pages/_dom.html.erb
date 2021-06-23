@@ -1,0 +1,144 @@
+<h1>DOM</h1>
+<h2>現在時刻の表示</h2>
+<p>
+  現在時刻: <span id='result'></span>
+</p>
+<h2>aタグを取得</h2>
+<h2>フォーム内に現在時刻を表示</h2>
+<form action="">
+  <label for="time">
+    時刻: <input type="text" id='time' name='time' size="20" >
+  </label>
+</form>
+<h2>'my'クラスの取得と表示</h2>
+<div id = 'my_class'></div>
+<h2>idがオレンジで、'オレンジ'クラスの取得と表示</h2>
+<div id = 'orange_list'></div>
+<h2>ボタンをクリックしてダイアログの表示</h2>
+<button id='btn' name="btn" type="submit">表示</button>
+<h2>写真情報の取得と表示</h2>
+<div id="my_image"></div>
+<h2>textContentとinnerHTMLの違い</h2>
+<div id="textContent">
+  <p style="color: red">設定されていません</p>
+</div>
+<div id="innerHtml">
+  <p style="color: red">設定されていません</p>
+</div>
+<h2>チェックボックス</h2>
+<form action="">
+  <div>
+    好きな食べ物は？:
+    <label>
+      <input type="checkbox" name="foods" id="foods" value="ラーメン">ラーメン
+    </label>
+    <label>
+      <input type="checkbox" name="foods" id="foods" value="焼きそば">焼きそば
+    </label>
+    <label>
+      <input type="checkbox" name="foods" id="foods" value="こんにゃく">こんにゃく
+    </label>
+    <button type="submit" id="btn2">送信</button>
+  </div>
+</form>
+<h2>radio</h2>
+<form action="">
+  <div>
+    好きな食べ物は？:
+    <label>
+      <input type="radio" name="foods" id="foods" value="ラーメン">ラーメン
+    </label>
+    <label>
+      <input type="radio" name="foods" id="foods" value="焼きそば">焼きそば
+    </label>
+    <label>
+      <input type="radio" name="foods" id="foods" value="こんにゃく">こんにゃく
+    </label>
+    <button type="submit" id="btn3">送信</button>
+  </div>
+</form>
+<h2>ファイルの取得</h2>
+<form >
+  <label for="file">ファイル:</label>
+  <input type="file" id="file" name="file">
+</form>
+<h2>テキストファイルの表示</h2>
+<form >
+  <label for="text_file">ファイル:</label>
+  <input type="file" id="text_file" name="text_file">
+</form>
+<hr />
+<pre id="open_file">
+
+</pre>
+<ul id="list_li">
+  <li>
+    <a href="https://www.apple.example.com">
+      apple
+    </a>
+  </li>
+  <li id="orange">
+    <a href="https://www.orange.example.com" class="orange">
+      orange
+    </a>
+  </li>
+  <li>
+    <a href="https://www.lemon.example.com">
+      lemon
+    </a>
+  </li>
+  <li>
+    <a href="https://www.cherry.example.com">
+      cherry
+    </a>
+  </li>
+  <li>
+    <a href="https://www.paul.example.com" class="my">
+      paul
+    </a>
+  </li>
+  <li>
+    <a href="https://www.mint.example.com" class="my">
+      mint
+    </a>
+  </li>
+</ul>
+
+
+<h2>写真情報</h2>
+<%= image_tag "villa-1" ,height:20,with:20,border:0,
+              alt:"村の写真", id: "logo"%>
+<%= javascript_pack_tag 'dom_js' %>
+<!--<form >-->
+<!--  <div>-->
+<!--    好きな食べ物は？:-->
+<!--    <label><input type="checkbox" name="food" value="ラーメン">ラーメン</label>-->
+<!--    <label><input type="checkbox" name="food" value="焼きそば">焼きそば</label>-->
+<!--    <label><input type="checkbox" name="food" value="ゴマ">ゴマ</label>-->
+<!--    <input type="button" value="送信" id="btn">-->
+<!--  </div>-->
+<!--</form>-->
+<!--<h2>radio</h2>-->
+<!--<form >-->
+<!--  <div>-->
+<!--    好きな食べ物は？:-->
+<!--    <label><input type="radio" name="food2" value="ラーメン">ラーメン</label>-->
+<!--    <label><input type="radio" name="food2" value="焼きそば">焼きそば</label>-->
+<!--    <label><input type="radio" name="food2" value="ゴマ">ゴマ</label>-->
+<!--    <input type="button" value="送信" id="btn2">-->
+<!--  </div>-->
+<!--</form>-->
+<!--<h2>ファイル</h2>-->
+<!--<form>-->
+<!--  <label for="file">ファイル:</label>-->
+<!--  <input type="file" id="file" name="file" multiple>-->
+<!--</form>-->
+<!--<h2>テキストファイルの表示</h2>-->
+<!--<form>-->
+<!--  <label for="text_file">ファイル:</label>-->
+<!--  <input type="file" id="text_file" >-->
+<!--</form>-->
+<!--<hr />-->
+<!--<pre id="output_text"></pre>-->
+
+<%#= javascript_pack_tag 'dom_js' %>

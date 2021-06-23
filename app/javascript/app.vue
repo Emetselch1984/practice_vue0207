@@ -1,22 +1,24 @@
-<template>
-  <div >
-    <p>{{ message }}</p>
-  </div>
-</template>
+<!--<template>-->
+<!--  <div id="app">-->
+<!--    　&lt;!&ndash; ★Boardコンポーネント呼び出し &ndash;&gt;-->
+<!--    <board />-->
+<!--    <pre>{{$data}}</pre>-->
+<!--  </div>-->
+<!--</template>-->
 
-<script>
-export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
-    }
-  }
-}
-</script>
+<!--<script>-->
+<!--import Board from './Board.vue'-->
+<!--import ListAdd from './ListAdd.vue'-->
+<!--export default {-->
+<!--  name: 'app',-->
+<!--  components: {-->
+<!--    // ★コンポーネントに登録する-->
+<!--    Board-->
 
-<style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
-</style>
+<!--  }-->
+<!--}-->
+<!--</script>-->
+
+<!--<style scoped>-->
+
+<!--</style>-->

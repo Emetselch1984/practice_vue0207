@@ -1,0 +1,27 @@
+vuexをrailsに導入する
+導入完了
+画面真っ白！
+Uncaught SyntaxError: Unexpected token v in JSON at position 0
+JSON.parse(savedLists)
+この箇所がおかしい。
+railsでjsonの出力の仕方が問題？
+lists: JSON.parse(savedLists)とすると解決
+
+リストが作成されない
+document.addEventListener('DOMContentLoaded', () => {
+    const board = new Vue({
+        store,
+        render: h => h(Board)
+    }).$mount()
+    document.body.appendChild(board.$el)
+
+    console.log(board)
+})
+ここらへんが怪しい。
+調べて見る価値があり。
+https://qiita.com/kazumawada/items/fd1f352c58a938d69de4
+https://qiita.com/kazutosato/items/c6ad32cdbb2c47de2ab8
+https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
+
+検証1
+シンプルにしてみる。

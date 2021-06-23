@@ -1,16 +1,33 @@
-<div id="app">
-  <h2>Todo List</h2>
-  <form v-on:submit.prevent>
-    <input type="text" v-model="newItem">
-    <button v-on:click = "addItem">
-      ADD
-    </button>  <pre>{{$data}}</pre></form>
-  <ul>
-    <li v-for= "todo in todos ">
-      <input type="checkbox" v-model="todo.isDone">
-      <span v-bind:class="{done: todo.isDone}">{{todo.item}}</span>
-      <button v-on:click="deleteItem(index)">delete</button>
-    </li>
-  </ul>
-</div>
-<%= javascript_pack_tag 'todoList' %>
+<!--<div id="app">-->
+<!--  <h2>Todo List</h2>-->
+<!--  <form v-on:submit.prevent>-->
+<!--    <input type="text" v-model="newItem">-->
+<!--    <button v-on:click="addItem">ADD</button>-->
+<!--  </form>-->
+<!--  <ul>-->
+<!--    <li v-for="todo in todos">-->
+<!--      <input type="checkbox" v-model="todo.isDone">-->
+<!--      <span v-bind:class="{done: todo.isDone}"> {{todo.item}}</span>-->
+<!--      <button v-on:click="deleteItem">delete</button>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--  <pre>{{$data}}</pre>-->
+<!--</div>-->
+<!--<div id="app">-->
+<!--  <h2>Todo List</h2>-->
+<!--  <form v-on:submit.prevent>-->
+<!--    <input type="text" v-model="newItem">-->
+<!--    <button v-on:click = "addItem">-->
+<!--      ADD-->
+<!--    </button>  <pre>{{$data}}</pre></form>-->
+<!--  <ul>-->
+<!--    <li v-for= "todo in todos ">-->
+<!--      <input type="checkbox" v-model="todo.isDone">-->
+<!--      <span v-bind:class="{done: todo.isDone}">{{todo.item}}</span>-->
+<!--      <button v-on:click="deleteItem(index)">delete</button>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
+<%= javascript_pack_tag 'to-do' %>
+<%= stylesheet_pack_tag 'to-do' %>
+

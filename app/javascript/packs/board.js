@@ -6,15 +6,18 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 import Vue from 'vue'
-import App from '../app.vue'
+import store from '../store/store.js'
+import Board from '../board.vue'
+Vue.config.productionTip = false
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    render: h => h(App)
-  }).$mount()
-  document.body.appendChild(app.$el)
+    const board = new Vue({
+        store,
+        render: h => h(Board)
+    }).$mount()
+    document.body.appendChild(board.$el)
 
-  console.log(app)
+    console.log(board)
 })
 
 
