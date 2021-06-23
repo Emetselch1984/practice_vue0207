@@ -8,7 +8,8 @@
     </form>
     <ul>
       <li v-for="todo in todos">
-        <span>{{todo.text}}</span>
+        <input type="checkbox" v-model="isDone">
+        <span v-bind:class="{done: todo.isDone}"> {{todo.text}}</span>
         <button v-on:click="deleteTodos">delete</button>
       </li>
     </ul>
@@ -21,13 +22,14 @@ export default {
   data: function () {
     return {
       text: "",
-      todos: []
+      todos: [],
     }
   },
   methods: {
     addTodo: function () {
       var todo = {
-        text: this.text
+        text: this.text,
+        isDone: false
       }
       if (this.text == '')
         return;
@@ -40,3 +42,13 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+
+li {
+  span.done {
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+</style>
