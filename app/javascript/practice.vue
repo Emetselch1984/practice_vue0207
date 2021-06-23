@@ -9,7 +9,7 @@
     <ul>
       <li v-for="todo in todos">
         <span>{{todo.text}}</span>
-        <button>delete</button>
+        <button v-on:click="deleteTodos">delete</button>
       </li>
     </ul>
     <pre>{{$data}}</pre>
@@ -33,6 +33,9 @@ export default {
         return;
       this.todos.push(todo)
       this.text = ""
+    },
+    deleteTodos: function (index) {
+      this.todos.splice(index,1)
     }
   }
 }
