@@ -6,6 +6,12 @@
       <input type="text" id="text_field" v-model="text">
       <button v-on:click="addTodo">保存する</button>
     </form>
+    <ul>
+      <li v-for="todo in todos">
+        <span>{{todo.text}}</span>
+        <button>delete</button>
+      </li>
+    </ul>
     <pre>{{$data}}</pre>
   </div>
 </template>
