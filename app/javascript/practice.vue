@@ -1,6 +1,10 @@
 <template>
   <div id="todoApp">
-    <h1>hello</h1>
+    <h1>TodoApp</h1>
+    <form>
+      <label for="text_field">入力してください</label>
+      <input type="text" id="text_field" v-model="text">
+    </form>
     <pre>{{$data}}</pre>
   </div>
 </template>
@@ -9,7 +13,7 @@ export default {
   name: 'todoApp',
   data: function () {
     return {
-      message: "hello"
+      text: ""
     }
   }
 }
