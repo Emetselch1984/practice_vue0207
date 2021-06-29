@@ -8,7 +8,7 @@
     </form>
     <ul>
       <li v-for="todo in todos">
-        <input type="checkbox" v-model="isDone">
+        <input type="checkbox" v-model="todo.isDone">
         <span v-bind:class="{done: todo.isDone}"> {{todo.text}}</span>
         <button v-on:click="deleteTodos">delete</button>
       </li>
