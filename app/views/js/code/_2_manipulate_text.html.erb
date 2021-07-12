@@ -1,0 +1,78 @@
+<h1>テキストの操作</h1>
+<section id="js-171">
+  <h1>要素の属性の設定</h1>
+  <ul>
+    <li>
+      <%= link_to  "apple","a.com",target: :_self %>
+    </li>
+    <li>
+      <%= link_to  "banana","b.com",target: :_self %>
+    </li>
+    <li>
+      <%= link_to  "cat","c.com",target: :_self %>
+    </li>
+    <li>
+      <%= link_to  "dairy","d.com",target: :_blank,rel: :external %>
+    </li>
+    <li>
+      <%= link_to  "egg","e.com",target: :_blank,rel: :external %>
+    </li>
+    <li class="js-a">
+      <%= link_to  "dairy","f.com",target: :_blank,rel: :external %>
+    </li>
+    <li class="js-a">
+      <%= link_to  "egg","g.com",target: :_blank,rel: :external %>
+    </li>
+  </ul>
+</section>
+<section id="js-172">
+  <h1>要素の属性を取得したい</h1>
+  <ul>
+    <li>
+      <%= link_to  "apple","a.com",target: :_self %>
+    </li>
+    <li>
+      <%= link_to  "banana","b.com",target: :_self ,class: "js-outer"%>
+    </li>
+    <li class="js-outer">
+      <%= link_to  "cat","c.com",target: :_self %>
+    </li >
+    <li>
+      <%= link_to  "dairy","d.com",target: :_blank,rel: :external %>
+    </li>
+    <li>
+      <%= link_to  "egg","e.com",target: :_blank,rel: :external %>
+    </li>
+    <li class="js-a">
+      <%= link_to  "dairy","f.com",target: :_blank,rel: :external ,class: "js-a2"%>
+    </li>
+    <li class="js-a">
+      <%= link_to  "egg","g.com",target: :_blank,rel: :external %>
+    </li>
+  </ul>
+  <h2>全ての属性を取得する</h2>
+  <%= image_tag "" ,id: "main",width: "88",height: "45",border: "0",alt: "Webbi"%>
+</section>
+<section id="js-173">
+  <h1>要素の属性を削除する</h1>
+  <ul>
+    <li>
+      <%= link_to  "egg","e.com",target: :_blank,rel: :external %>
+    </li>
+    <li class="js-a">
+      <%= link_to  "dairy","f.com",target: :_blank,rel: :external ,class: "js-a2"%>
+    </li>
+    <li class="js-a">
+      <%= link_to  "egg","g.com",target: :_blank,rel: :external %>
+    </li>
+  </ul>
+</section>
+<section id="js-174">
+  <h1>要素に指定の属性が存在するかどうかを判定する</h1>
+  <%= image_tag "image-2.jpg" %>
+  <img />
+  <%= image_tag "" %>
+  <%= image_tag "",class: "js-img" %>
+  <%= image_tag "image-2.jpg" %>
+</section>
+<%= javascript_pack_tag 'js/code/manipulate_text' %>

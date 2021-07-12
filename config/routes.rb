@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   namespace :js do
     resources :code, only: :index
   end
+  get "check",to: "check_css#index"
 end
