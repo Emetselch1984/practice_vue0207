@@ -1,0 +1,156 @@
+<v-container>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 25"
+      :key="n"
+      cols="auto"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="100"
+        width="100"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2>cols12</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 25"
+      :key="n"
+      cols="12"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="100"
+        width="100"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2>cols4</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 25"
+      :key="n"
+      cols="4"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="100"
+        width="100"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2>cols2</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 25"
+      :key="n"
+      cols="2"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="100"
+        width="100"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2>cols1</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 25"
+      :key="n"
+      cols="1"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="100"
+        width="100"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2 class="text-center">colの数を3</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 3"
+      :key="n"
+      cols="auto"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="200"
+        width="200"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+  <h2 class="text-center">colの数を3で縦幅と横幅が300</h2>
+  <v-row justify="center">
+    <v-col
+      v-for="n in 3"
+      :key="n"
+      cols="auto"
+    >
+      <v-card
+        :elevation="n - 1"
+        height="300"
+        width="300"
+        class="red"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+          v-text="n - 1"
+        ></v-row>
+      </v-card>
+    </v-col>
+  </v-row>
+
+</v-container>

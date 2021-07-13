@@ -1,0 +1,168 @@
+<div id="elevation">
+  <v-app id="inspire">
+    <v-container>
+      <h2>左から影が濃くなっていく</h2>
+      <v-row justify="space-around">
+        <v-col
+          v-for="elevation in elevations"
+          :key="elevation"
+          cols="12"
+          md="4"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="elevation"
+              class="mx-auto"
+              height="100"
+              width="100"
+            ></v-sheet>
+          </v-sheet>
+        </v-col>
+      </v-row>
+      <h2>md=6</h2>
+      <v-row justify="space-around">
+        <v-col
+          v-for="elevation in elevations"
+          :key="elevation"
+          cols="12"
+          md="6"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="elevation"
+              class="mx-auto"
+              height="100"
+              width="100"
+            ></v-sheet>
+          </v-sheet>
+        </v-col>
+      </v-row>
+      <h2>md=12</h2>
+      <v-row justify="space-around">
+        <v-col
+          v-for="elevation in elevations"
+          :key="elevation"
+          cols="12"
+          md="12"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="elevation"
+              class="mx-auto"
+              height="100"
+              width="100"
+            ></v-sheet>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-container>
+    <h2>高さと横幅を200px</h2>
+    <v-row justify="space-around">
+      <v-col
+        v-for="elevation in elevations"
+        :key="elevation"
+        cols="12"
+        md="4"
+      >
+        <v-sheet
+          class="pa-12"
+          color="grey lighten-3"
+        >
+          <v-sheet
+            :elevation="elevation"
+            class="mx-auto"
+            height="200"
+            width="200"
+          ></v-sheet>
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <h2>高さと横幅を300px</h2>
+    <v-row justify="space-around">
+      <v-col
+        v-for="elevation in elevations"
+        :key="elevation"
+        cols="12"
+        md="4"
+      >
+        <v-sheet
+          class="pa-12"
+          color="grey lighten-3"
+        >
+          <v-sheet
+            :elevation="elevation"
+            class="mx-auto"
+            height="300"
+            width="300"
+          ></v-sheet>
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <v-container>
+      <h2>v-forを使わないとコードが重複</h2>
+      <v-row justify="space-around">
+        <v-col
+          cols="12"
+          md="4"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="12"
+              class="mx-auto"
+              height="100"
+              width="100"
+              align="center"
+              justify="center"
+            >cols12</v-sheet>
+          </v-sheet>
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="12"
+              class="mx-auto"
+              height="100"
+              width="100"
+            ></v-sheet>
+          </v-sheet>
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+        >
+          <v-sheet
+            class="pa-12"
+            color="grey lighten-3"
+          >
+            <v-sheet
+              :elevation="12"
+              class="mx-auto"
+              height="100"
+              width="100"
+            >cols12</v-sheet>
+          </v-sheet>
+        </v-col>
+
+      </v-row>
+    </v-container>
+
+  </v-app>
+</div>

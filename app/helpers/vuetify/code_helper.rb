@@ -1,0 +1,2 @@
+module Vuetify::CodeHelper
+end
